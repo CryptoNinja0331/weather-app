@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vatawaran | Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="container">
+        <div class="logo">
+          <img src="images/page-logo.png" alt="" srcset="" />
+        </div>
+
+        <div class="search-menu">
+          <input
+            type="text"
+            class="search-bar"
+            name="search-content"
+            placeholder="Find your location"
+          />
+          <button class="search-btn">Find</button>
+        </div>
+
+        <div>
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a
+                href="https://github.com/vaheedsk36/weather-app"
+                target="_blank"
+                >Source Code</a
+              >
+            </li>
+            <li>
+              <a href="https://vaheedsk36.herokuapp.com/" target="_blank"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="current">
+        <div class="current-forecast">
+          <div class="current-weather">
+            <div class="city-date">
+              <div class="location-div">
+                <img src="images/location.png" />
+                <h1 class="city"></h1>
+              </div>
+              <h3 class="date-time">September 25,2021</h3>
+            </div>
+            <div class="weather-image">
+              <img id="descImg" />
+              <h2 class="weather-details">Cloudy</h2>
+            </div>
+          </div>
+
+          <div class="temperature">
+            <div class="unit-conv">
+              <button class="celsius unit-active">C</button>
+              <button class="farenheit">F</button>
+            </div>
+
+            <div class="temp-dashboard">
+              <div class="day-night-temp">
+                <div class="min-max-temp">
+                  <div class="min-max-temp-sub">
+                    <h1 class="cur-max-temp">81</h1>
+                  </div>
+                  <div class="min-max-temp-sub">
+                    <h1 class="cur-min-temp">50</h1>
+                  </div>
+                </div>
+
+                <h1><span class="day-temp">72</span></h1>
+              </div>
+
+              <div class="temp-day-night">
+                <div class="temp-day-main temp-day-container">
+                  <img src="images/day.png" />
+                  <h2 class="morning-temp">M</h2>
+                </div>
+                <div class="temp-day-main temp-afternoon-container">
+                  <img src="images/evening.png" />
+                  <h2 class="evening-temp">A</h2>
+                </div>
+                <div class="temp-day-main temp-night-container">
+                  <img src="images/night.png" />
+                  <h2 class="night-temp">N</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drop-down">
+        <ul>
+          <li>&#10247;<a href="" class="drop-down-header">Monday</a></li>
+        </ul>
+      </div>
+
+      <div class="details-navigator">
+        <ul class="details-bar">
+          <li class="nav-col"><a href="" class="day0">Monday</a></li>
+          <li class="nav-col"><a href="" class="day1">Tuesday</a></li>
+          <li class="nav-col"><a href="" class="day2">Wednesday</a></li>
+          <li class="nav-col"><a href="" class="day3">Thursday</a></li>
+          <li class="nav-col"><a href="" class="day4">Friday</a></li>
+          <li class="nav-col"><a href="" class="day5">Saturday</a></li>
+          <li class="nav-col"><a href="" class="day6">Sunday</a></li>
+        </ul>
+      </div>
+
+      <div class="weather-data">
+        <!-- <div class="temp" id="temp1">
+          <h1 class="current-time">NOW</h1>
+          <img src="" alt="">
+          <h2 class="" ><span id="current-temp">72</span>&deg;</h2>
+        </div> -->
+      </div>
+    </div>
+
+    <footer>
+      Project by Masood Akhtar Vaheed, Opensourced for
+      non-commercial purposes only.
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
